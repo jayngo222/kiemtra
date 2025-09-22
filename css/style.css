@@ -1,0 +1,301 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.menu {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.trang-chu {
+    background: linear-gradient(to right, orange, orange);
+    color: white;
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+.anh-dai-dien img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+.ten {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cong-viec {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.mo-ta {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.gioi-thieu {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.tieu-de {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: orange;
+}
+
+.noi-dung {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+.van-ban {
+    flex: 2;
+}
+
+.tieu-de-nho {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.tieu-de-nho:first-child {
+    margin-top: 0;
+}
+
+.van-ban .mo-ta {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ky-nang {
+    list-style: none;
+}
+
+.ky-nang li {
+    background: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.so-lieu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.muc {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.so {
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.nhan {
+    font-size: 16px;
+    color: #666;
+}
+
+.du-an {
+    padding: 80px 20px;
+    background: white;
+}
+
+.danh-sach-du-an {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.du-an-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.anh-du-an img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ten-du-an {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px 10px;
+    color: #333;
+}
+
+.mo-ta-du-an {
+    padding: 0 20px 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.lien-he {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.thong-tin-lien-he {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+.thong-tin-ca-nhan {
+    flex: 1;
+}
+
+.danh-sach-lien-he {
+    list-style: none;
+}
+
+.danh-sach-lien-he li {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+
+/* ==== FOOTER ==== */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.ban-quyen {
+    font-size: 14px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .menu ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+    }
+    
+    .trang-chu {
+        padding: 140px 20px 60px;
+    }
+    
+    .ten {
+        font-size: 32px;
+    }
+    
+    .noi-dung {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .so-lieu {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .muc {
+        padding: 20px 15px;
+    }
+    
+    .danh-sach-du-an {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .thong-tin-lien-he {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
